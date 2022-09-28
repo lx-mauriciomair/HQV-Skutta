@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skutta</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="header-section regular-padding-16" id="header-section">
+      <div class="header-background" id="header-background-id"></div>
+      <img src="Images/Logos/HQV-logo-blue.png" />
+      <div class="header-right-container">
+        <img class="region-icon" src="Images/Icons/Earth, Home, World.png" />
+        <a class="shop-link mobile_heading_09_typography" href="#">Shop</a>
+      </div>
+    </div>
+    <div class="section01" id="section01">
+      <div class="title-section" id="title-id">
+        <div
+          class="title-section-background image-cover"
+          style="
+            background-image: url('/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 1.png');
+          "
+        ></div>
+        <div class="title-text">
+          <h1 class="title_typography">Skutta</h1>
+        </div>
+      </div>
+      <div class="fancy-text-section regular-margin-16" id="fancy-text-section">
+        <ul class="fancy-first" id="fancy-text-first-part">
+          <li class="card start-card">
+            <div class="card_content mobile_heading02_typography">
+              <p class=".fancy-text-color_B">
+                Expand your urban orbit with the next step in urban transport.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content mobile_heading02_typography">
+              <p>Emission-free.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content mobile_heading02_typography">
+              <p>Elegantly modern.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content mobile_heading02_typography">
+              <p>Enduringly robust.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="fancy-second" id="fancy-text-second-part">
+          <div class="card_content mobile_heading02_typography">
+            <p>The future is now.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-section image-container01">
+        <div
+          class="image-contain"
+          id="image01"
+          style="
+            background-image: url('/Images/Product/90034_Bltz Concept 1.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type01 regular-padding-16" id="box01_01">
+        <div class="box_upper_section" id="box_upper01">
+          <p class="type01-small-title mobile_heading06_typography">Design</p>
+          <p class="type01-big-title mobile_heading02_typography">
+            Effortless electric mobility, wherever you need to go.
+          </p>
+        </div>
+        <div class="box_lower_section" id="box_lower01">
+          <p class="type01-text mobile_body_long02_typography">
+            We don’t believe your city adventures should be limited. A sleek and
+            ergonomic folding design ensures the Skutta can accompany you every
+            step of the way. Public transport? No problem. Just fold and go!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section02" id="section02">
+      <div class="image-section image-container02">
+        <div
+          class="image-contain"
+          id="image02"
+          style="
+            background-image: url('/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 8 copy.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type02 regular-padding-16" id="box02_01">
+        <div class="type02-text mobile_heading03_typography">
+          <p>
+            Move through the urban chaos on the freshest and most dynamic
+            last-mile solution from Husqvarna.
+          </p>
+        </div>
+      </div>
+      <div class="image-section image-container03">
+        <div
+          class="image-contain"
+          id="image03"
+          style="
+            background-image: url('/Images/Product/90314_Bltz Concept 9.png');
+          "
+        ></div>
+      </div>
+      <div class="image-section image-container04">
+        <div
+          class="image-contain"
+          id="image04"
+          style="
+            background-image: url('/Images/Product/90314_Bltz Concept 10.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type03 regular-padding-16" id="box03_01">
+        <p class="type01-small-title mobile_heading06_typography">Ergonomics</p>
+        <p class="type01-big-title mobile_heading02_typography">
+          Ready for anything? Stay centred with an ergonomic riding position.
+          All due to premium, yet thoughtful, engineering.
+        </p>
+      </div>
+      <div class="canvas-section01" id="canvas-section01">
+        <div class="canvas-container01">
+          <canvas id="angle"></canvas>
+        </div>
+      </div>
+
+      <div class="text-box-type04 regular-margin-16" id="box04_01">
+        <p class="type04-title mobile_heading05_typography">
+          17° steering angle
+        </p>
+        <p class="type04-text mobile_body_short02_typography">
+          An optimal standing position puts you in the safest stance for
+          braking.
+        </p>
+      </div>
+      <div class="s22kmh" id="s22kmh">
+        <div class="mask-s22">
+          <div class="mask-background" id="mask-background01"></div>
+          <div class="mask-text" id="mask-text01">
+            <p>22km</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section03" id="section03">
+      <div class="image-section image-container05">
+        <div
+          class="image-contain"
+          id="image05"
+          style="
+            background-image: url('/Images/Background/pexels-mike-jones-9461304 3.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type03 regular-padding-16" id="box03_02">
+        <p class="type01-small-title mobile_heading06_typography">Power</p>
+        <p class="type01-big-title mobile_heading02_typography">
+          No more missed opportunities. Charge one battery while you ride with
+          the other. It’s as simple as that.
+        </p>
+      </div>
+      <div class="battery-section regular-margin-16">
+        <div class="percentage-number"></div>
+        <div class="progres-bar-container">
+          <div class="logo"></div>
+          <ul class="progres-bar-right-container">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="text-box-type06">
+          <p class="mobile_body_long02_typography">
+            Charge anytime, anywhere. Just press the easy-release buttons,
+            remove the battery, and pop it into the charging dock. And with two
+            available batteries, there’s no need to wait. Simply replace, and
+            go!
+          </p>
+        </div>
+      </div>
+      <div class="image-section image-container06">
+        <div
+          class="image-contain"
+          id="image06"
+          style="
+            background-image: url('/Images/Product/90034_Bltz Concept 1.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type04 regular-margin-16" id="box04_02">
+        <p class="type04-title mobile_heading05_typography">36V 9Ah battery</p>
+        <p class="type04-text mobile_body_short02_typography">
+          Modular, removeable, and high quality.
+        </p>
+      </div>
+      <div class="text-box-type04 regular-margin-16" id="box04_03">
+        <p class="type04-title mobile_heading05_typography">350W HUB Motor</p>
+        <p class="type04-text mobile_body_short02_typography">
+          No licence needed for most European countries.
+        </p>
+      </div>
+    </div>
+    <div class="section04" id="section04">
+      <div class="subsection04" id="subsection04_01">
+        <div class="image-section image-container07">
+          <div
+            class="image-contain"
+            id="image07"
+            style="background-image: url('/Images/Background/Dark-image.png')"
+          ></div>
+        </div>
+        <div class="text-box-type05 regular-padding-16" id="box05_01">
+          <p class="desktop_heading_heading-07">Lights</p>
+          <p class="type01-big-title mobile_heading03_typography">
+            Shine bright against the big city lights, from midday to midnight.
+            Eye-catching LEDs guarantee you’ll never get lost in the crowd.
+          </p>
+        </div>
+        <div class="image-section image-container08">
+          <div
+            class="image-contain"
+            id="image08"
+            style="
+              background-image: url('/Images/Product/90034_Bltz Concept 1.png');
+            "
+          ></div>
+        </div>
+        <div class="image-section image-container09">
+          <div
+            class="image-contain"
+            id="image09"
+            style="
+              background-image: url('/Images/Product/65737_NORDEN  901  8.png');
+            "
+          ></div>
+        </div>
+        <div class="text-box-type06 regular-margin-16">
+          <p class="desktop_body_short-01">
+            A premium travel machine shaped by distinct origins, where only the
+            purest and smartest solutions endure the rugged northern landscape.
+          </p>
+        </div>
+      </div>
+      <div class="subsection04" id="subsection04_02">
+        <div class="image-section image-container10">
+          <div
+            class="image-contain"
+            id="image10"
+            style="
+              background-image: url('/Images/Background/90314_Bltz Concept 6.png');
+            "
+          ></div>
+        </div>
+        <div class="text-box-type02 regular-padding-16" id="box02_02">
+          <div class="type02-text mobile_heading03_typography">
+            <p>
+              Move through the urban chaos on the freshest and most dynamic
+              last-mile solution from Husqvarna.
+            </p>
+          </div>
+        </div>
+        <div class="image-section image-container11">
+          <div
+            class="image-contain"
+            id="image11"
+            style="
+              background-image: url('/Images/Background/90314_Bltz Concept 2.png');
+            "
+          ></div>
+        </div>
+        <div class="image-section image-container12">
+          <div
+            class="image-contain"
+            id="image12"
+            style="
+              background-image: url('/Images/Background/90314_Bltz Concept 7.png');
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="section05" id="section05">
+      <div class="text-box-type05 regular-padding-16" id="box05_02">
+        <p class="desktop_heading_heading-07">Brakes</p>
+        <p class="type01-big-title mobile_heading03_typography">
+          No half measures. From the front to back, the Skutta radiates elevated
+          style and intelligent design.
+        </p>
+      </div>
+      <div class="canvas-section02">
+        <div class="canvas-container02">
+          <canvas id="hero-lightpass"></canvas>
+        </div>
+      </div>
+      <div class="text-box-type06 regular-margin-16">
+        <p class="desktop_body_short-01">
+          Stop with confidence. Independently actuated mechanical brakes, on
+          both front and rear wheels, are designed to be long-lasting and allow
+          you precise control. With zero trailing cables for a sleek and
+          minimalistic finish.
+        </p>
+      </div>
+      <div class="text-box-type04 regular-margin-16">
+        <p class="type04-title mobile_heading05_typography">Dual drum brakes</p>
+        <p class="type04-text mobile_body_short02_typography">
+          Reliable mechanical functionality, designed to be low maintenance.
+        </p>
+      </div>
+    </div>
+    <div class="section06" id="section06">
+      <div class="image-section image-container13">
+        <div
+          class="image-contain"
+          id="image13"
+          style="
+            background-image: url('/Images/Background/fancy motorbike.png');
+          "
+        ></div>
+      </div>
+      <div class="image-section image-container14">
+        <div
+          class="image-contain"
+          id="image14"
+          style="
+            background-image: url('/Images/Product/90314_Bltz Concept 9.png');
+          "
+        ></div>
+      </div>
+      <div class="image-section image-container15">
+        <div
+          class="image-contain"
+          id="image15"
+          style="
+            background-image: url('/Images/Product/90314_Bltz Concept 10.png');
+          "
+        ></div>
+      </div>
+      <div class="text-box-type07">
+        <div class="type07-description regular-margin-16">
+          <p class="desktop_heading_heading-06">
+            The future-proof solution to everyday mobility. Expand your urban
+            orbit today.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section regular-padding-16" id="footer-section">
+      <div
+        class="logo-footer image-contain"
+        style="background-image: url('/Images/Logos/HQV-logo-footer.png')"
+      ></div>
+      <form class="newsletter-subscription">
+        <label class="newsletter desktop_heading_heading-08">
+          Newsletter
+        </label>
+        <input class="form-input" placeholder="Enter your email address" />
+        <button
+          class="subscribe-to-newsletter image-contain"
+          style="background-image: url('/Images/Icons/Grouparrow.png')"
+        ></button>
+      </form>
+      <div class="footer-links-section">
+        <p class="footer-section-title desktop_heading_heading-08">Husqvarna</p>
+        <div class="husqvarna-footer-section desktop_body_long-02">
+          <a href="#" class="footer-button">Contact&nbsp;</a>
+          <a href="#" class="footer-button">/ Careers&nbsp;</a>
+          <a href="#" class="footer-button">/ Find a Dealer&nbsp;</a>
+          <a href="#" class="footer-button">/ Book a Testride</a>
+        </div>
+        <p class="footer-section-title desktop_heading_heading-08">Social</p>
+        <div class="social-footer-section desktop_body_long-02">
+          <a href="#" class="footer-button">Facebook&nbsp;</a>
+          <a href="#" class="footer-button">/ Twitter&nbsp;</a>
+          <a href="#" class="footer-button">/ Instagram&nbsp;</a>
+          <a href="#" class="footer-button">/ YouTube</a>
+        </div>
+        <p class="footer-section-title desktop_heading_heading-08">
+          Motorcycles
+        </p>
+        <div class="motorcycles desktop_body_long-02">
+          <a href="#" class="footer-button">MX&nbsp;</a>
+          <a href="#" class="footer-button">/ Enduro&nbsp;</a>
+          <a href="#" class="footer-button">/ E-Ride&nbsp;</a>
+          <a href="#" class="footer-button">/ Travel&nbsp;</a>
+          <a href="#" class="footer-button">/ Sports Tourer&nbsp;</a>
+          <a href="#" class="footer-button">/ Supermoto&nbsp;</a>
+          <a href="#" class="footer-button">/ Naked&nbsp;</a>
+          <a href="#" class="footer-button">/ Supersport</a>
+        </div>
+        <p class="footer-section-title desktop_heading_heading-08">Husqvarna</p>
+        <div class="HQV-world desktop_body_long-02">
+          <a href="#" class="footer-button">Our Story&nbsp;</a>
+          <a href="#" class="footer-button">/ Be part of HQV&nbsp;</a>
+          <a href="#" class="footer-button">/ Press&nbsp;</a>
+          <a href="#" class="footer-button">/ News&nbsp;</a>
+          <a href="#" class="footer-button">Stories</a>
+        </div>
+        <p class="footer-section-title desktop_heading_heading-08">Services</p>
+        <div class="services-footer-section desktop_body_long-02">
+          <a href="#" class="footer-button">Finance&nbsp;</a>
+          <a href="#" class="footer-button">/ Warranty & Maintenance&nbsp;</a>
+          <a href="#" class="footer-button">/ Service & Safety&nbsp;</a>
+          <a href="#" class="footer-button">/ Spare Parts Finder</a>
+        </div>
+      </div>
+
+      <p class="copyright">
+        © 2021 Husqvarna Sportmotorcycle GmbH, all rights reserved
+      </p>
+      <div class="footer-legal-section">
+        <a href="#" class="footer-privacy-button">Imprint&nbsp;</a>
+        <a href="#" class="footer-privacy-button">/ Privacy policy&nbsp;</a>
+        <a href="#" class="footer-privacy-button">/ Legal notices</a>
+      </div>
+    </div>
+    <script>
+      canvas_function_02();
+      canvas_function_01();
+      window.onscroll = function () {
+        var scroll_position = document.documentElement.scrollTop;
+        console.log("scroll_position", scroll_position);
+        header_background_switch(scroll_position);
+        call_function(scroll_position);
+      };
+      function header_background_switch(scroll_position) {
+        var bottom_position_title = document
+          .getElementById("title-id")
+          .getBoundingClientRect();
+        var header_background = document.getElementById("header-background-id");
+        if (scroll_position < bottom_position_title.height) {
+          header_background.style.height = 0 + "px";
+        } else if (
+          header_background.clientHeight <= 60 &&
+          scroll_position >= bottom_position_title.height
+        ) {
+          header_background.style.height =
+            scroll_position - bottom_position_title.height + "px";
+        }
+      }
+      function manage_cards(
+        target_var,
+        /*to consider/-> values are given in (scroll pos)*/
+        trigger_pos_start,
+        trigger_pos_end,
+        /*shift distance is given in px*/
+        shift_distance,
+        scroll_position
+      ) {
+        if (
+          scroll_position >= trigger_pos_start &&
+          scroll_position <= trigger_pos_end
+        ) {
+          var translate_distance =
+            (scroll_position - trigger_pos_start) *
+            (shift_distance / (trigger_pos_end - trigger_pos_start));
+          target_var.style.transform =
+            "translate(0px," + translate_distance + "px)";
+        } else if (scroll_position < trigger_pos_start) {
+          target_var.style.transform = "translate(0px," + 0 + "px)";
+        } else {
+          target_var.style.transform =
+            "translate(0px," + shift_distance + "px)";
+        }
+      }
+      function zoom_cards(
+        /*Has to be the image element (because of overflow)*/
+        target_var,
+        /*to consider/-> values are given in (scroll pos)*/
+        trigger_pos_start,
+        trigger_pos_end,
+        /*zoom*/
+        zoom_mod,
+        scroll_position
+      ) {
+        if (
+          scroll_position >= trigger_pos_start &&
+          scroll_position <= trigger_pos_end
+        ) {
+          var scale_mod =
+            1 +
+            (scroll_position - trigger_pos_start) *
+              (zoom_mod / (trigger_pos_end - trigger_pos_start));
+          target_var.style.scale = scale_mod;
+          console.log(getTranslateY(target_var));
+        } else if (scroll_position < trigger_pos_start) {
+          target_var.style.scale = 1;
+        } else {
+          target_var.style.scale = 1 + zoom_mod;
+        }
+      }
+      function opacity_cards /*Has to be the image element (because of overflow)*/(
+        target_var,
+        /*to consider/-> values are given in (scroll pos)*/
+        trigger_pos_start,
+        trigger_pos_end,
+        /*opacity 0-1*/
+        opacity_start,
+        opacity_mod,
+        scroll_position
+      ) {
+        if (
+          scroll_position >= trigger_pos_start &&
+          scroll_position <= trigger_pos_end
+        ) {
+          var opacity =
+            opacity_start +
+            (scroll_position - trigger_pos_start) *
+              (opacity_mod / (trigger_pos_end - trigger_pos_start));
+          target_var.style.opacity = opacity;
+        } else if (scroll_position < trigger_pos_start) {
+          target_var.style.opacity = opacity_start;
+        } else {
+          target_var.style.transform = opacity_start + opacity_mod;
+        }
+      }
+      function getTranslateY(element) {
+        const style = window.getComputedStyle(element);
+        const matrix = new DOMMatrixReadOnly(style.transform);
+        return {
+          translateY: matrix.m42,
+        };
+      }
+      function canvas_function_02() {
+        const html = document.documentElement;
+        const canvas = document.getElementById("hero-lightpass");
+        const context = canvas.getContext("2d");
+
+        const frameCount = 359;
+        const currentFrame = (index) =>
+          `https://res.cloudinary.com/pon-digital-solutions/image/upload/w_1109,h_995,c_fill,g_center,q_auto:low,f_auto/v1614589178/dmp.pon.bike/no1/scene5/scene5-${index.toString()}.jpg`;
+
+        const preloadImages = () => {
+          for (let i = 1; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+          }
+        };
+
+        const img = new Image();
+        img.src = currentFrame(1);
+        canvas.width = 360;
+        canvas.height = 640;
+        img.onload = function () {
+          context.drawImage(img, 0, 0);
+        };
+
+        const updateImage = (index) => {
+          img.src = currentFrame(index);
+          context.drawImage(img, 0, 0);
+        };
+
+        window.addEventListener("scroll", () => {
+          const scrollTop = html.scrollTop;
+          const maxScrollTop = html.scrollHeight - window.innerHeight;
+          const scrollFraction = scrollTop / maxScrollTop;
+          const frameIndex = Math.min(
+            frameCount - 1,
+            Math.ceil(scrollFraction * frameCount)
+          );
+
+          requestAnimationFrame(() => updateImage(frameIndex + 1));
+        });
+
+        preloadImages();
+      }
+      function canvas_function_01() {
+        const html = document.documentElement;
+        const canvas = document.getElementById("angle");
+        const context = canvas.getContext("2d");
+
+        const frameCount = 359;
+        const currentFrame = (index) =>
+          `https://res.cloudinary.com/pon-digital-solutions/image/upload/w_1109,h_995,c_fill,g_center,q_auto:low,f_auto/v1614589178/dmp.pon.bike/no1/scene5/scene5-${index.toString()}.jpg`;
+
+        const preloadImages = () => {
+          for (let i = 1; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+          }
+        };
+
+        const img = new Image();
+        img.src = currentFrame(1);
+        canvas.width = 290;
+        canvas.height = 290;
+        img.onload = function () {
+          context.drawImage(img, 0, 0);
+        };
+
+        const updateImage = (index) => {
+          img.src = currentFrame(index);
+          context.drawImage(img, 0, 0);
+        };
+
+        window.addEventListener("scroll", () => {
+          const scrollTop = html.scrollTop;
+          const maxScrollTop = html.scrollHeight - window.innerHeight;
+          const scrollFraction = scrollTop / maxScrollTop;
+          const frameIndex = Math.min(
+            frameCount - 1,
+            Math.ceil(scrollFraction * frameCount)
+          );
+
+          requestAnimationFrame(() => updateImage(frameIndex + 1));
+        });
+
+        preloadImages();
+      }
+      function relative_position_document(target_var) {
+        var position = Math.round(
+          target_var.getBoundingClientRect().top +
+            document.documentElement.scrollTop
+        );
+        /*console.log(position);*/
+        return position;
+      }
+      function call_function(scroll_position) {
+        var shift_modifier = 0;
+        /*#region section01*/
+        manage_cards(
+          document.getElementById("fancy-text-second-part"),
+          800,
+          900,
+          shift_modifier - 40,
+          scroll_position
+        );
+        shift_modifier += -40;
+        manage_cards(
+          document.getElementById("image01"),
+          900,
+          1000,
+          shift_modifier - 115,
+          scroll_position
+        );
+        shift_modifier += -115;
+        opacity_cards(
+          document.getElementById("image01"),
+          900,
+          1000,
+          0,
+          1,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("box01_01"),
+          1100,
+          1200,
+          shift_modifier - 70,
+          scroll_position
+        );
+        shift_modifier += -70;
+        manage_cards(
+          document.getElementById("box_lower01"),
+          1280,
+          1340,
+          -140,
+          scroll_position
+        );
+        shift_modifier += -70;
+        manage_cards(
+          document.getElementById("section01"),
+          1340,
+          1640,
+          300,
+          scroll_position
+        );
+        console.log(shift_modifier);
+        shift_modifier += 300;
+        /*#endregion*/
+        /*#region section02*/
+        manage_cards(
+          document.getElementById("section02"),
+          1340,
+          1341,
+          -shift_modifier,
+          scroll_position
+        );
+        shift_modifier = 0;
+        manage_cards(
+          document.getElementById("image02"),
+          1340,
+          1640,
+          shift_modifier - 320,
+          scroll_position
+        );
+        shift_modifier += -320;
+        /*zoom_cards(
+          document.getElementById("image02"),
+          1630,
+          1980,
+          0.2,
+          scroll_position
+        );*/
+        manage_cards(
+          document.getElementById("box02_01"),
+          2150,
+          2250,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("image03"),
+          2300,
+          2500,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("image04"),
+          2900,
+          3000,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("box03_01"),
+          3550,
+          3700,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("canvas-section01"),
+          4060,
+          4160,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("box04_01"),
+          5585,
+          5685,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("s22kmh"),
+          5980,
+          6095,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("mask-text01"),
+          6160,
+          6220,
+          -70,
+          scroll_position
+        );
+        zoom_cards(
+          document.getElementById("mask-text01"),
+          6250,
+          6500,
+          -0.6,
+          scroll_position
+        );
+        opacity_cards(
+          document.getElementById("mask-background01"),
+          4122,
+          4500,
+          1,
+          -1,
+          scroll_position
+        );
+        zoom_cards(
+          document.getElementById("mask-background01"),
+          6250,
+          6500,
+          0.6,
+          scroll_position
+        );
+        opacity_cards(
+          document.getElementById("mask-background01"),
+          6250,
+          6500,
+          1,
+          -1,
+          scroll_position
+        );
+        /*#endregion*/
+        /*#region section03*/
+        manage_cards(
+          document.getElementById("section03"),
+          6500,
+          6820,
+          shift_modifier - 640,
+          scroll_position
+        );
+        shift_modifier = 0;
+        manage_cards(
+          document.getElementById("box03_02"),
+          6850,
+          6950,
+          shift_modifier - 70,
+          scroll_position
+        );
+        shift_modifier = -140;
+        manage_cards(
+          document.getElementById("image06"),
+          8700,
+          8800,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("box04_02"),
+          8950,
+          9050,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("box04_03"),
+          8950,
+          9050,
+          shift_modifier,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("section04"),
+          9150,
+          9350,
+          -1800,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("section05"),
+          9150,
+          9350,
+          -1720,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("section06"),
+          9150,
+          9350,
+          -1720,
+          scroll_position
+        );
+        manage_cards(
+          document.getElementById("footer-section"),
+          9150,
+          9350,
+          -1720,
+          scroll_position
+        );
+        /*#endregion*/
+        /*#region section04*/
+        /*manage_cards(
+          document.getElementById("section04"),
+          8950,
+          9050,
+          shift_modifier,
+          scroll_position
+        );*/
+        /*#endregion*/
+      }
+    </script>
+  </body>
+</html>

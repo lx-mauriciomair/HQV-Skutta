@@ -1,0 +1,691 @@
+/*#region fonts*/
+/*#region Helvetica Neue*/
+/*
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeue Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeue Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeue.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeueMed.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeue Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Fonts/Helvetica Neue/HelveticaNeue BlackCond.ttf");
+  font-weight: 900;
+}
+*/
+/*#endregion*/
+/*#region Evangelos*/
+@font-face {
+  font-family: "Evangelos";
+  src: url("/Fonts/Evangelos/Evangelos-Regular.woff");
+  src: url("/Fonts/Evangelos/Evangelos-regular.woff2");
+}
+
+/*#endregion*/
+/*#endregion*/
+/*#region Typography*/
+.title_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 82px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.mobile_heading02_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+.mobile_heading03_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+}
+.mobile_heading05_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.mobile_heading06_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+.mobile_heading_09_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+.mobile_body_long02_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.mobile_body_short01_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.16;
+}
+.mobile_body_short02_typography {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.desktop_heading_heading-06 {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.desktop_heading_heading-07 {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.desktop_heading_heading-08 {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.desktop_body_long-02 {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.desktop_body_short-01 {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+}
+/*#endregion*/
+
+/*#region body*/
+body {
+}
+body div {
+  display: flex;
+}
+body a {
+  text-decoration: none;
+  color: #002550;
+}
+body ul {
+  list-style-type: none;
+}
+body li {
+  list-style-type: none;
+}
+/*#endregion*/
+/*#region overall styling*/
+.regular-padding-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.regular-margin-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.image-section {
+  width: 100%;
+}
+
+.image-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.align-center {
+  text-align: center;
+}
+/*
+████████ ███████ ██   ██ ████████     ██████   ██████  ██   ██      
+   ██    ██       ██ ██     ██        ██   ██ ██    ██  ██ ██      
+   ██    █████     ███      ██        ██████  ██    ██   ███      
+   ██    ██       ██ ██     ██        ██   ██ ██    ██  ██ ██     
+   ██    ███████ ██   ██    ██        ██████   ██████  ██   ██     
+*/
+
+/*#region text-box 01*/
+.text-box-type01 {
+  flex-direction: column;
+  gap: 7px;
+}
+.type01-small-title {
+  color: #002550;
+}
+.type01-big-title {
+  color: #002550;
+}
+
+.type01-text {
+  color: #989aa6;
+}
+.box_upper_section {
+  flex-direction: column;
+}
+
+/*#endregion*/
+/*#region text-box 02*/
+.type02-text {
+  color: #989aa6;
+}
+
+/*#endregion*/
+/*#region text-box 03*/
+.text-box-type03 {
+  display: flex;
+  flex-direction: column;
+}
+/*#endregion*/
+/*#region text-box 04*/
+.text-box-type04 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #f8f8f9;
+  gap: 18px;
+}
+.type04-title {
+  color: #002550;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.type04-text {
+  color: #002550;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+/*#endregion*/
+/*#region text-box 03*/
+.text-box-type05 {
+  display: flex;
+  flex-direction: column;
+}
+/*#endregion*/
+/*#region text-box 07*/
+.text-box-type07 {
+  text-align: center;
+  flex-direction: column;
+}
+/*#endregion*/
+/*#endregion*/
+/*
+██   ██ ███████  █████  ██████  ███████ ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+███████ █████   ███████ ██   ██ █████   ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+*/
+/*#region header*/
+.header-section {
+  height: 60px;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+.header-section .header-right-container,
+.shop-link,
+img {
+  z-index: 2;
+}
+.header-background {
+  width: 100%;
+  height: 0px;
+  max-height: 60px;
+  min-height: 0px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.05);
+}
+.header-right-container {
+  gap: 20px;
+  align-items: center;
+}
+.shop-link {
+  padding: 4px 12px;
+  background-color: #002550;
+  color: #ffffff;
+}
+/*#endregion*/
+
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████   ██ 
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████ ███ 
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██  ██ 
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██  ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████   ██ 
+
+*/
+/*#region main*/
+.section01 {
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 1;
+}
+/*#endregion*/
+/*#region section01*/
+#box01_01 .box_upper_section {
+  margin-bottom: 150px;
+}
+/*
+████████ ██ ████████ ██      ███████ 
+   ██    ██    ██    ██      ██      
+   ██    ██    ██    ██      █████   
+   ██    ██    ██    ██      ██      
+   ██    ██    ██    ███████ ███████ 
+   */
+/*#region title*/
+.title-section {
+  flex-grow: 1;
+  height: 651px;
+  align-items: flex-end;
+  margin-bottom: 128px;
+}
+.title-section-background {
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  height: 711px;
+  z-index: 0;
+}
+.title-text {
+  flex-grow: 1;
+  height: 367px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #5f5f5f 100%);
+  transform: rotate(0deg);
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+}
+.title-text h1 {
+  padding-bottom: 80px;
+}
+
+/*#endregion*/
+/*
+███████  █████  ███    ██  ██████ ██    ██     ████████ ███████ ██   ██ ████████ 
+██      ██   ██ ████   ██ ██       ██  ██         ██    ██       ██ ██     ██    
+█████   ███████ ██ ██  ██ ██        ████          ██    █████     ███      ██    
+██      ██   ██ ██  ██ ██ ██         ██           ██    ██       ██ ██     ██    
+██      ██   ██ ██   ████  ██████    ██           ██    ███████ ██   ██    ██    
+*/
+/*#region fancy text*/
+.fancy-text-section {
+  flex-direction: column;
+  margin-bottom: 215px;
+}
+#cards-text {
+  color: #ccd3dc;
+  /*transition: margin-bottom 10ms;*/
+}
+#cards-text .card_content {
+  transition: color 3s;
+  padding-bottom: 4px;
+}
+.start-card {
+  color: #002550;
+}
+.fancy-first {
+  margin-bottom: 80px;
+}
+.fancy-second {
+  transition: opacity 10ms;
+  opacity: 1;
+  color: #002550;
+}
+#image01 {
+  flex-grow: 1;
+  height: 290px;
+  margin-bottom: 150px;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████  ██████  
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████      ██ 
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██  █████  
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██ ██      
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████  ███████ 
+*/
+/*#region main*/
+.section02 {
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 2;
+}
+/*#endregion*/
+/*#region section02*/
+#image02 {
+  width: 360px;
+  max-width: 360px;
+  height: 693px;
+  margin-bottom: 80px;
+}
+
+#image03 {
+  flex-grow: 1;
+  height: 461px;
+  margin-bottom: 80px;
+}
+#box02_01 {
+  margin-bottom: 80px;
+}
+#image04 {
+  flex-grow: 1;
+  height: 461px;
+  margin-bottom: 225px;
+}
+#box03_01 {
+  margin-bottom: 80px;
+}
+.canvas-section01 {
+  max-width: 360px;
+  height: 200vh;
+  position: relative;
+  margin-bottom: 80px;
+}
+.canvas-container01 {
+  width: 290px;
+  height: 290px;
+  position: sticky;
+  top: 385px;
+  justify-content: center;
+}
+.s22kmh {
+  height: 200vh;
+  flex-grow: 1;
+
+  position: relative;
+  justify-content: center;
+}
+.mask-s22 {
+  height: 693px;
+  position: sticky;
+  top: 300px;
+  overflow: hidden;
+  justify-content: center;
+}
+.mask-background {
+  width: 100%;
+  height: 693px;
+  position: absolute;
+  top: 0;
+  background-image: url("/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 1.png");
+  background-position: center;
+}
+.mask-text {
+  font-family: "Helvetica Neue";
+  height: 693px;
+  background-clip: text;
+  color: transparent;
+  background-image: url("/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 1.png");
+  font-size: 300px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+/*#endregion*/
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████  ██████  
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████      ██ 
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██  █████  
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██      ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████  ██████  
+*/
+/*region section03*/
+.section03 {
+  flex-direction: column;
+}
+.battery-section {
+  flex-direction: column;
+  height: 200vh;
+  flex-grow: 1;
+  margin-bottom: 150px;
+}
+#image05 {
+  height: 629px;
+  width: 100%;
+  margin-bottom: 125px;
+}
+#image06 {
+  height: 290px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+#box04_02 {
+  margin-bottom: 25px;
+}
+/*#endregion*/
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████  ██   ██ 
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████ ██   ██ 
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██ ███████ 
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██      ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████       ██ 
+*/
+/*region section04*/
+.section04 {
+  flex-direction: column;
+  background-color: black;
+}
+.subsection04 {
+  flex-direction: column;
+}
+
+/*#region section04S01*/
+#image07 {
+  height: 741px;
+  width: 100%;
+}
+#image08 {
+  height: 290px;
+  width: 100%;
+}
+#image09 {
+  height: 347px;
+  width: 100%;
+  background-position: right;
+}
+#image10 {
+  height: 536px;
+  width: 100%;
+}
+
+/*#endregion*/
+/*#region section04S02*/
+.subsection04 {
+  flex-direction: column;
+}
+#image10 {
+  height: 536px;
+  width: 100%;
+}
+#image11 {
+  height: 470px;
+  width: 100%;
+}
+#image12 {
+  height: 470px;
+  width: 100%;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████  ███████ 
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████ ██      
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██ ███████ 
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██      ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████  ███████
+*/
+/*#region section 05*/
+.section05 {
+  flex-direction: column;
+}
+.canvas-section02 {
+  width: 100%;
+  height: 800vh;
+}
+.canvas-container02 {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 1720px;
+}
+
+/*#endregion*/
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██      ██████   ██████  
+██      ██      ██         ██    ██ ██    ██ ████   ██     ██  ████ ██       
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██     ██ ██ ██ ███████  
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██     ████  ██ ██    ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████      ██████   ██████  
+*/
+/*#region section 06*/
+.section06 {
+  flex-direction: column;
+}
+#image13 {
+  height: 693px;
+  width: 100%;
+}
+#image14 {
+  height: 461px;
+  width: 100%;
+}
+#image15 {
+  height: 461px;
+  width: 100%;
+}
+/*#endregion*/
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ */
+/*#region footer*/
+.logo-footer {
+  min-width: 81px;
+  min-height: 71px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-section {
+  flex-direction: column;
+  justify-content: center;
+  color: #002550;
+  margin-bottom: 44px;
+}
+.footer-links-section {
+  flex-direction: column;
+  border-bottom: 1px solid #5f5f5f;
+  margin-bottom: 40px;
+
+  /* align-items: center;*/
+}
+.footer-links-section > div {
+  flex-wrap: wrap;
+  margin-bottom: 43px;
+}
+.newsletter-subscription {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 48px;
+}
+.subscribe-to-newsletter {
+  background-color: transparent;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  border: none;
+  width: 21px;
+  height: 15px;
+}
+.subscribe-to-newsletter {
+  width: 24px;
+  height: 18px;
+}
+.form-input {
+  border: none;
+  border-bottom: 1px solid #878787;
+  flex-grow: 1;
+  color: #002550;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+.copyright {
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.footer-legal-section {
+  justify-content: center;
+}
+.footer-privacy-button {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+/*#endregion*/
