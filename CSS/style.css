@@ -312,8 +312,14 @@ img {
 }
 /*#endregion*/
 /*#region section01*/
-#box01_01 .box_upper_section {
-  margin-bottom: 150px;
+#box01_01 {
+  margin-top: 70px;
+}
+#box_upper01 {
+  padding-bottom: 25px;
+}
+#box_lower01 {
+  margin-top: 70px;
 }
 /*
 ████████ ██ ████████ ██      ███████ 
@@ -331,7 +337,7 @@ img {
 }
 .title-section-background {
   position: absolute;
-  top: -60px;
+  top: 0px;
   width: 100%;
   height: 711px;
   z-index: 0;
@@ -360,7 +366,7 @@ img {
 /*#region fancy text*/
 .fancy-text-section {
   flex-direction: column;
-  margin-bottom: 215px;
+  padding-bottom: 100px;
 }
 #cards-text {
   color: #ccd3dc;
@@ -374,17 +380,21 @@ img {
   color: #002550;
 }
 .fancy-first {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .fancy-second {
+  margin-top: 40px;
   transition: opacity 10ms;
   opacity: 1;
   color: #002550;
 }
 #image01 {
+  margin-top: 115px;
   flex-grow: 1;
   height: 290px;
-  margin-bottom: 150px;
+}
+.image-container01 {
+  padding-bottom: 80px;
 }
 
 /*#endregion*/

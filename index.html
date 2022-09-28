@@ -17,18 +17,18 @@
         <a class="shop-link mobile_heading_09_typography" href="#">Shop</a>
       </div>
     </div>
-    <div class="section01" id="section01">
-      <div class="title-section" id="title-id">
-        <div
-          class="title-section-background image-cover"
-          style="
-            background-image: url('/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 1.png');
-          "
-        ></div>
-        <div class="title-text">
-          <h1 class="title_typography">Skutta</h1>
-        </div>
+    <div class="title-section" id="title-id">
+      <div
+        class="title-section-background image-cover"
+        style="
+          background-image: url('/Images/Background/business-person-with-tablet-computer-on-his-electric-scooter-commuting-vehicle 1.png');
+        "
+      ></div>
+      <div class="title-text">
+        <h1 class="title_typography">Skutta</h1>
       </div>
+    </div>
+    <div class="section01" id="section01">
       <div class="fancy-text-section regular-margin-16" id="fancy-text-section">
         <ul class="fancy-first" id="fancy-text-first-part">
           <li class="card start-card">
@@ -448,89 +448,6 @@
             scroll_position - bottom_position_title.height + "px";
         }
       }
-      function manage_cards(
-        target_var,
-        /*to consider/-> values are given in (scroll pos)*/
-        trigger_pos_start,
-        trigger_pos_end,
-        /*shift distance is given in px*/
-        shift_distance,
-        scroll_position
-      ) {
-        if (
-          scroll_position >= trigger_pos_start &&
-          scroll_position <= trigger_pos_end
-        ) {
-          var translate_distance =
-            (scroll_position - trigger_pos_start) *
-            (shift_distance / (trigger_pos_end - trigger_pos_start));
-          target_var.style.transform =
-            "translate(0px," + translate_distance + "px)";
-        } else if (scroll_position < trigger_pos_start) {
-          target_var.style.transform = "translate(0px," + 0 + "px)";
-        } else {
-          target_var.style.transform =
-            "translate(0px," + shift_distance + "px)";
-        }
-      }
-      function zoom_cards(
-        /*Has to be the image element (because of overflow)*/
-        target_var,
-        /*to consider/-> values are given in (scroll pos)*/
-        trigger_pos_start,
-        trigger_pos_end,
-        /*zoom*/
-        zoom_mod,
-        scroll_position
-      ) {
-        if (
-          scroll_position >= trigger_pos_start &&
-          scroll_position <= trigger_pos_end
-        ) {
-          var scale_mod =
-            1 +
-            (scroll_position - trigger_pos_start) *
-              (zoom_mod / (trigger_pos_end - trigger_pos_start));
-          target_var.style.scale = scale_mod;
-          console.log(getTranslateY(target_var));
-        } else if (scroll_position < trigger_pos_start) {
-          target_var.style.scale = 1;
-        } else {
-          target_var.style.scale = 1 + zoom_mod;
-        }
-      }
-      function opacity_cards /*Has to be the image element (because of overflow)*/(
-        target_var,
-        /*to consider/-> values are given in (scroll pos)*/
-        trigger_pos_start,
-        trigger_pos_end,
-        /*opacity 0-1*/
-        opacity_start,
-        opacity_mod,
-        scroll_position
-      ) {
-        if (
-          scroll_position >= trigger_pos_start &&
-          scroll_position <= trigger_pos_end
-        ) {
-          var opacity =
-            opacity_start +
-            (scroll_position - trigger_pos_start) *
-              (opacity_mod / (trigger_pos_end - trigger_pos_start));
-          target_var.style.opacity = opacity;
-        } else if (scroll_position < trigger_pos_start) {
-          target_var.style.opacity = opacity_start;
-        } else {
-          target_var.style.transform = opacity_start + opacity_mod;
-        }
-      }
-      function getTranslateY(element) {
-        const style = window.getComputedStyle(element);
-        const matrix = new DOMMatrixReadOnly(style.transform);
-        return {
-          translateY: matrix.m42,
-        };
-      }
       function canvas_function_02() {
         const html = document.documentElement;
         const canvas = document.getElementById("hero-lightpass");
@@ -625,246 +542,71 @@
         /*console.log(position);*/
         return position;
       }
+      function manage_cards(
+        target_var,
+        pos_start,
+        pos_end,
+        shift_distance,
+        scroll_position
+      ) {
+        pos_start -= vh(100);
+        pos_end -= vh(100);
+        var trigger_pos_start =
+          relative_position_document(target_var) + pos_start;
+        console.log("pos_start " + trigger_pos_start);
+        var trigger_pos_end = relative_position_document(target_var) + pos_end;
+        console.log("pos_end " + trigger_pos_end);
+        if (
+          scroll_position >= trigger_pos_start &&
+          scroll_position <= trigger_pos_end
+        ) {
+          var manage_margin =
+            shift_distance -
+            (scroll_position - trigger_pos_start) *
+              (shift_distance / (trigger_pos_end - trigger_pos_start));
+          target_var.style.marginTop = manage_margin + "px";
+        } else if (scroll_position < trigger_pos_start) {
+          target_var.style.marginTop = shift_distance + "px";
+        } else {
+          target_var.style.marginTop = 0 + "px";
+        }
+      }
+      function vh(v) {
+        var h = Math.max(
+          document.documentElement.clientHeight,
+          window.innerHeight || 0
+        );
+        return (v * h) / 100;
+      }
       function call_function(scroll_position) {
-        var shift_modifier = 0;
-        /*#region section01*/
         manage_cards(
           document.getElementById("fancy-text-second-part"),
-          800,
-          900,
-          shift_modifier - 40,
+          vh(0),
+          vh(50),
+          40,
           scroll_position
         );
-        shift_modifier += -40;
         manage_cards(
           document.getElementById("image01"),
-          900,
-          1000,
-          shift_modifier - 115,
-          scroll_position
-        );
-        shift_modifier += -115;
-        opacity_cards(
-          document.getElementById("image01"),
-          900,
-          1000,
-          0,
-          1,
+          vh(0),
+          vh(50),
+          115,
           scroll_position
         );
         manage_cards(
           document.getElementById("box01_01"),
-          1100,
-          1200,
-          shift_modifier - 70,
+          vh(0),
+          vh(50),
+          70,
           scroll_position
         );
-        shift_modifier += -70;
         manage_cards(
           document.getElementById("box_lower01"),
-          1280,
-          1340,
-          -140,
+          vh(0),
+          vh(25),
+          70,
           scroll_position
         );
-        shift_modifier += -70;
-        manage_cards(
-          document.getElementById("section01"),
-          1340,
-          1640,
-          300,
-          scroll_position
-        );
-        console.log(shift_modifier);
-        shift_modifier += 300;
-        /*#endregion*/
-        /*#region section02*/
-        manage_cards(
-          document.getElementById("section02"),
-          1340,
-          1341,
-          -shift_modifier,
-          scroll_position
-        );
-        shift_modifier = 0;
-        manage_cards(
-          document.getElementById("image02"),
-          1340,
-          1640,
-          shift_modifier - 320,
-          scroll_position
-        );
-        shift_modifier += -320;
-        /*zoom_cards(
-          document.getElementById("image02"),
-          1630,
-          1980,
-          0.2,
-          scroll_position
-        );*/
-        manage_cards(
-          document.getElementById("box02_01"),
-          2150,
-          2250,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("image03"),
-          2300,
-          2500,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("image04"),
-          2900,
-          3000,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("box03_01"),
-          3550,
-          3700,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("canvas-section01"),
-          4060,
-          4160,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("box04_01"),
-          5585,
-          5685,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("s22kmh"),
-          5980,
-          6095,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("mask-text01"),
-          6160,
-          6220,
-          -70,
-          scroll_position
-        );
-        zoom_cards(
-          document.getElementById("mask-text01"),
-          6250,
-          6500,
-          -0.6,
-          scroll_position
-        );
-        opacity_cards(
-          document.getElementById("mask-background01"),
-          4122,
-          4500,
-          1,
-          -1,
-          scroll_position
-        );
-        zoom_cards(
-          document.getElementById("mask-background01"),
-          6250,
-          6500,
-          0.6,
-          scroll_position
-        );
-        opacity_cards(
-          document.getElementById("mask-background01"),
-          6250,
-          6500,
-          1,
-          -1,
-          scroll_position
-        );
-        /*#endregion*/
-        /*#region section03*/
-        manage_cards(
-          document.getElementById("section03"),
-          6500,
-          6820,
-          shift_modifier - 640,
-          scroll_position
-        );
-        shift_modifier = 0;
-        manage_cards(
-          document.getElementById("box03_02"),
-          6850,
-          6950,
-          shift_modifier - 70,
-          scroll_position
-        );
-        shift_modifier = -140;
-        manage_cards(
-          document.getElementById("image06"),
-          8700,
-          8800,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("box04_02"),
-          8950,
-          9050,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("box04_03"),
-          8950,
-          9050,
-          shift_modifier,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("section04"),
-          9150,
-          9350,
-          -1800,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("section05"),
-          9150,
-          9350,
-          -1720,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("section06"),
-          9150,
-          9350,
-          -1720,
-          scroll_position
-        );
-        manage_cards(
-          document.getElementById("footer-section"),
-          9150,
-          9350,
-          -1720,
-          scroll_position
-        );
-        /*#endregion*/
-        /*#region section04*/
-        /*manage_cards(
-          document.getElementById("section04"),
-          8950,
-          9050,
-          shift_modifier,
-          scroll_position
-        );*/
-        /*#endregion*/
       }
     </script>
   </body>
